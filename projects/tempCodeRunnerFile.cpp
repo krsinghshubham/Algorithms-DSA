@@ -1,0 +1,2 @@
+int tc;
+  cin >> tc;
