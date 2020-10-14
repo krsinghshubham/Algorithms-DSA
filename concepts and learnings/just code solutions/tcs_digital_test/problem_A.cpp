@@ -1,7 +1,6 @@
-//problem link:
-// tutorial linK:
-// learning:
-#include <bits/stdc++.h>
+
+#include <iostream>
+#include <math.h>
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
@@ -18,11 +17,16 @@ Algorithm:
 int main()
 {
   FASTIO_TEMPLATE;
-  int tc;
-  cin>>tc;
-  while(tc--)
-  {
-
-  }
-  return 0;
+ int d;
+ char a,b;
+ int x,y;
+ cin>>d;
+ cin>>a>>b;
+ cin>>x>>y;
+ int p=((int)b-(int)a)+1;
+//  cout<<p<<endl;
+ int q=y-x+1;
+//  cout<<q<<endl;
+ int result=pow(q,4)*pow(p,2)*d;
+ cout<<result;
 }

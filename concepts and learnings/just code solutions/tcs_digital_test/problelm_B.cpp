@@ -1,6 +1,4 @@
-//problem link:
-// tutorial linK:
-// learning:
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
