@@ -1,5 +1,6 @@
 //problem link:
-// tutorial linK:
+// tutorial linK:https://www.youtube.com/watch?v=xbpUHSKoALg&t=473s&ab_channel=RachitJain
+            // * 2: alternate: https://www.youtube.com/watch?v=EHpS2TBfWQg
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

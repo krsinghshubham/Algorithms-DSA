@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
-// tutorial linK: 
+// tutorial linK: Leetcode discuss : https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/discuss/150321/Easy-Understanding-Java-beat-95.7-with-Explanation
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -43,6 +43,41 @@ Algorithm:
 
 * Time: O(), Space: O()
 */
+
+class Solution
+{
+public:
+    Node *flatten(Node *head)
+    {
+        if (!head)
+            return head;
+
+        Node *p = head;
+        while (p)
+        {
+            if (!p->child)
+                p = p->next;
+            else
+            {
+                Node *temp = p->child;
+
+                while (temp->next)
+                    temp = temp->next;
+
+                temp->next = p->next;
+                if (p->next) // * IMPORTANT , COSIDER TC: [1,null,2,null,3,null] THAT IS 3 NODES CONNECTED VETICALLY WITH NEXT NULL FOR ALL
+                    p->next->prev = temp;
+                p->child->prev = p;
+
+                p->next = p->child;
+                p->child = nullptr;
+            }
+        }
+        return head;
+    }
+};
+
+// */
 int main()
 {
     ListNode *head = nullptr;
