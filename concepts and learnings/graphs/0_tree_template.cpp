@@ -21,23 +21,8 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-// void iot(TreeNode *root, vector<int> &ans)
-// {
-// 
-//     if (!root)
-//         return;
-//     iot(root->left, ans);
-//     ans.push_back(root->val);
-//     iot(root->right, ans);
-// }
-// vector<int> inorderTraversal(TreeNode *root)
-// {
-//     vector<int> v;
-//     iot(root, v);
-//     return v;
-// }
 
-// Iterative Solution
+
 int main()
 {
     struct TreeNode *root = new TreeNode(1);
@@ -46,7 +31,7 @@ int main()
     root->left->left = new TreeNode(4);
     root->left->right = new TreeNode(5);
 
-    cout << "\nInorder traversal of binary tree is \n";
+    cout << "\n traversal of binary tree is \n";
     vector<int> result = fuction(root);
 
     for (auto x : result)

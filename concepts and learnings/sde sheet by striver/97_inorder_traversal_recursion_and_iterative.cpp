@@ -1,6 +1,6 @@
 //problem link: https://leetcode.com/problems/binary-tree-inorder-traversal/
 // tutorial linK:
-// morriss: https://www.youtube.com/watch?v=9ChGER8A3Ps&ab_channel=KarthikChennupati
+//! morriss: (ALSO CALLED THREADED BINARY TREE) https://www.youtube.com/watch?v=9ChGER8A3Ps&ab_channel=KarthikChennupati
 // stack: https://www.youtube.com/watch?v=nzmtCFNae9k
 // stack wale ka video se keval idea, code mera. video wale code is not that much optimised.just understand the flow from it.
 // learning:
@@ -34,7 +34,7 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
-
+// recursion
 void iot(TreeNode *root, vector<int> &ans)
 {
 
@@ -50,6 +50,7 @@ vector<int> inorderTraversal(TreeNode *root)
     iot(root, v);
     return v;
 }
+// Iterative: using stack
 vector<int> inorderTraversalUsingStack(TreeNode *root)
 {
     vector<int> result;
@@ -74,13 +75,48 @@ vector<int> inorderTraversalUsingStack(TreeNode *root)
     }
     return result;
 }
+// * Iteratvie : using morris
+// TreeNode *predecessor(TreeNode *root) // lengthy to use it outside , because we need to pass current also.
+// {
+//     while (root->right)
+//     root = root->right;
+//     return root;
+// }
 vector<int> morrisInorderTraversal(TreeNode *root)
 {
     vector<int> result;
-
+    TreeNode *curr = root;
+    while (curr)
+    {
+        if (!curr->left) // only right subtree exists.
+        {
+            result.pb(curr->val); // visit current
+            curr = curr->right;
+        }
+        else
+        {
+            TreeNode *pred = curr->left; // rightmost node of left subtree; Making a function and using outide will be lengthy coz it will need to pass curr also.
+            // while(pred->right || (pred->right!=curr)) // better way
+            while (pred->right && pred->right != curr) // confused at first time... thinking pred->right as pred->right->right
+                pred = pred->right;
+            // predecesoor updated
+            // cout << "pred seq " << pred->val << endl;
+            // cout << endl;
+            if (!pred->right) // 1st time me nahi karega, but after re visiting that node, it will exist;
+            {
+                pred->right = curr; // threaded to current node
+                curr = curr->left;
+            }
+            else // means we are revisiting
+            {
+                pred->right = nullptr;
+                result.pb(curr->val); // root node of inorder travrsal
+                curr = curr->right;
+            }
+        }
+    }
     return result;
 }
-// Iterative Solution
 int main()
 {
     struct TreeNode *root = new TreeNode(1);
