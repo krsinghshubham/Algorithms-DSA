@@ -9,12 +9,11 @@ using namespace std;
 
 #define PI 3.1415926535897932384626
 
-
 int main()
 {
   ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 
-  vector<int> nums = {1,3,4,2,2};
+  vector<int> nums = {1, 3, 4, 2, 2};
   int result = 0;
   int n = nums.size();
   for (int i = 0; i < n; i++)
@@ -24,24 +23,24 @@ int main()
   //  for(auto k:nums)
   // cout<<k<<" ";
 
-  cout<<endl;
+  cout << endl;
   vector<int> vx;
-  for (int i=1;i<n;i++)
+  for (int i = 1; i < n; i++)
   {
-    if (nums[i]> 2*n)  // impprtont comaprison
+    if (nums[i] > 2 * n) // impprtont comaprison, max possible if no duplicate is 2n
 
     {
-      cout<<i;
+      cout << i;
       break;
     }
-  //   else
-  //   {
-  //     continue;
-  //   }
+    //   else
+    //   {
+    //     continue;
+    //   }
   }
   // printing all duplicate elemetns
-  for(auto k:vx)
-  cout<<k<<" ";
+  for (auto k : vx)
+    cout << k << " ";
 
   // cout<<endl;
   // return vx[0];
@@ -52,22 +51,24 @@ int main()
 // submitted for above link.
 // solution: https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2&t=0s
 // gfg link
-class Solution {
+class Solution
+{
 public:
-    int findDuplicate(vector<int>& nums) {
-        
-      slow=nums[0];
-      fast=nums[0];
-      do{
-        slow=nums[slow];
-        fast=nums[nums[fast]];
-      }
-      fast=nums[0]; // put anyone slow or fast to begin of arr and then increment once for both , nexxt collison is the repetitve elemnt
-      while(slow!=fast)
-      (
-        slow=nums[slow];
-        fast=fast[fast];
-      )
-      return slow;
+  int findDuplicate(vector<int> &nums)
+  {
+    int slow = nums[0];
+    int fast = nums[0];
+    do
+    {
+      slow = nums[slow];
+      fast = nums[nums[fast]];
+    } while (slow != fast);
+    fast = nums[0];
+    while (slow != fast)
+    {
+      slow = nums[slow];
+      fast = nums[fast];
     }
+    return slow;
+  }
 };

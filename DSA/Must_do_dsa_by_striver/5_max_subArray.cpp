@@ -41,7 +41,7 @@ int maxSubArraySum(int arr[], int n)
   return maxsum;
 
   //! if only max sub required and not the subarray then .... 
-  /*
+  
   / // sum=0, max=int_min
   / // if sum<0.. sum=0...
   / // else store max.
@@ -55,7 +55,7 @@ int maxSubArraySum(int arr[], int n)
       sum = 0;
   }
   return maxsum;
-  */
+  
 }
 
 int main()

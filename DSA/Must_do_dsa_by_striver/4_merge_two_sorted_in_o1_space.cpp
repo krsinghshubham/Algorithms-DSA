@@ -24,7 +24,7 @@ void merge(int arr[], int brr[], int m, int n)
       i++;
       // rearranging brr in sorted array
       //! sort(brr, brr+n); complexity: O(nlogn)... we will optimise it to O(n)
-      for (int k = n - 1; k > 0; k--) // placing brr[0] int its corrected positiion
+      for (int k = n - 1; k > 0; k--) // placing brr[0] int its corrected positiion throuh loop.
       { // traversing right to left
         //if smalled than or equal to brr[0] swap.
         //ex. 15,11,13,13,16
