@@ -1,3 +1,4 @@
+// done already same as in ll section and one in array section.
 //problem link:
 //1. https://leetcode.com/problems/linked-list-cycle/submissions/
 // 2. medium : // https://leetcode.com/problems/linked-list-cycle-ii/

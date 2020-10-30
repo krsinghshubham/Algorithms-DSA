@@ -1,5 +1,5 @@
-//problem link:
-// tutorial linK:
+//problem link: https://leetcode.com/problems/rotate-list/
+// tutorial linK: commented
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

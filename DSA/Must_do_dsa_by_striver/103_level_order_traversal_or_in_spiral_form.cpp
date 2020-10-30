@@ -45,8 +45,8 @@ vector<int> levelOrderInOneline(TreeNode *node)
     return result;
 }
 //* level by level in new line
-//! one new learning after its
-//* this works fine but learned a nw trick, implemented below
+//! one new learning after this
+//* this commented code is complex and gives wrong answer for few in  LC , better way is implemented below.
 //
 // vector<vector<int>> levelOrder(TreeNode *root)
 // {
@@ -90,7 +90,7 @@ vector<int> levelOrderInOneline(TreeNode *node)
 //     return result;
 // }
 
-// * THIS MEDTHOD IS TWICH FASTER, BECASUE OF NO RESIZING AND ALL.
+// * THIS MEDTHOD IS TWICE FASTER, BECASUE OF NO RESIZING AND ALL AND HEREAFTER OUR WAY TO GO.
 vector<vector<int>> levelOrder(TreeNode *root)
 {
     vector<vector<int>> result;
@@ -117,7 +117,7 @@ vector<vector<int>> levelOrder(TreeNode *root)
                 q.push_back(temp->left);
             if (temp->right)
                 q.push_back(temp->right);
-        }
+        } // A smaller trick here will give us height of tree too. think and go to next question.
         // result.push_back(vec);
         //vec.resize(0);
     }
@@ -167,7 +167,7 @@ vector<vector<int>> zigzagLevelOrder(TreeNode *root)
                 temp = q.back();
                 q.pop_back(); // piche se nikala
                 result.back().push_back(temp->val);
-                if (temp->left) // pehle right
+                if (temp->right) // pehle right
                     q.push_front(temp->right);
                 if (temp->left) // then left
                     q.push_front(temp->left);

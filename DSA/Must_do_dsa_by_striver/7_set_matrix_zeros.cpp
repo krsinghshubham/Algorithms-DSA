@@ -24,7 +24,7 @@ void setZeroes(vector<vector<int>> &matrix)
   // uptil now dummy matrix created and flag set.
   for (int i = rows - 1; i >= 0; i--) //! i is not checked for equaltiy because 0th column 1st element will be zero only for that particular element only if flag=false.
   {
-    for (int j = columns - 1; j >= 1; j--) //!uptill j==1 only, parent column will be handle based on flag only.
+    for (int j = columns - 1; j >= 1; j--) //* !uptill j==1 only, parent column will be handle based on flag only.
     {
       if (matrix[i][0] == 0 || matrix[0][j] == 0)
         matrix[i][j] = 0;

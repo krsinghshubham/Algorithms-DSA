@@ -1,7 +1,7 @@
 //problem link and explanationa and quotes:
 // https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/
 // everything is explained in gfg itself.
-
+//* VISITING GFG os must
 // C++ program to Find the repeating 
 // and missing elements 
 // algo...
@@ -51,13 +51,13 @@ void getTwoElements(int arr[], int n,
 	/* Now divide elements into two 
 	sets by comparing a rightmost set 
 	bit of xor1 with the bit at the same 
-	position in each element. Also, 
+	position in each el-ement. Also, 
 	get XORs of two sets. The two 
 	XORs are the output elements.1 
 	The following two for loops 
 	serve the purpose */
 	for (i = 0; i < n; i++) { 
-		if (arr[i] & set_bit_no) 
+		if (arr[i] & set_bit_no) //*  its & and not &&
 			/* arr[i] belongs to first set */
 			*x = *x ^ arr[i]; 
 
@@ -92,7 +92,3 @@ int main()
 		<< " number is " << *y; 
 	getchar(); 
 } 
-
-// This code is contributed by Code_Mech 
-
-

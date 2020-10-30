@@ -1,5 +1,5 @@
-//problem link:
-// tutorial linK:
+//problem link: https://leetcode.com/problems/merge-intervals/
+// tutorial linK: https://youtu.be/2JzRBPFYbKE?list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

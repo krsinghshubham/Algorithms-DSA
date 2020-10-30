@@ -15,7 +15,8 @@ Counting sort has better time complexity but worse space complexity.
 So if you have very large sets it really depends on what is more important to you... memory consumption or CPU consumption.
 and what if elements are not integers but strings, how will you implement counting sort.
 Points to be noted:
-1. Counting sort is efficient if the range of input data is not significantly greater than the number of objects to be sorted. Consider the situation where the input sequence is between range 1 to 10K and the data is 10, 5, 10K, 5K.
+1. Counting sort is efficient if the range of input data is not significantly greater than the number of objects to be sorted. 
+    Consider the situation where the input sequence is between range 1 to 10K and the data is 10, 5, 10K, 5K.
 2. It is not a comparison based sorting. It running time complexity is O(n) with space proportional to the range of data.
 3. It is often used as a sub-routine to another sorting algorithm like radix sort.
 4. Counting sort uses a partial hashing to count the occurrence of the data object in O(1).
@@ -107,7 +108,7 @@ int main()
 // problem: https://leetcode.com/problems/sort-colors/
 // runtime 0 sec, 
 // space: constant.
-// this is only for 0,1 ,2 but can be used in quick sort variationc called 3 way qucik sort
+// * this is only for 0,1 ,2 but can be used in quick sort variationc called 3 way qucik sort
 #include <bits/stdc++.h>
 using namespace std;
 
