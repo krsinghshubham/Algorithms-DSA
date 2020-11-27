@@ -1,5 +1,6 @@
 //problem link: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 // tutorial linK: https://www.youtube.com/watch?v=_pnqMz5nrRs and also in placement notes.
+// for iterative here only.
 // learning: using recursion, can be done easily via iteratively too.
 #include <bits/stdc++.h>
 using namespace std;
@@ -38,73 +39,51 @@ class Solution
 public:
     int maxDepth(TreeNode *root)
     {
-                if (!root)
-                    return 0; // for leaf it will hold 1, because we are returning +1;
+        if (!root)
+            return 0; // for leaf it will hold 1, because we are returning +1;
 
-                int left = maxDepth(root->left);
-                int right = maxDepth(root->right);
-                return max(left, right) + 1;
+        int left = maxDepth(root->left);
+        int right = maxDepth(root->right);
+        return max(left, right) + 1;
         //return !root ? 0 : max(maxDepth(root->left), max depth(root->right)) + 1;
     }
 };
 __________________________________________________________________________________________________________
-Algorithm ITERATIVE : EASY, NOT IMPLEMENTED BY MYSELF, KABHI TIME MILE TO I HAVE TO IMPLEMENT THIS AND UNCOMMENT THE CODE.
+//! Algorithm ITERATIVE
+//* same as BFS, just for each level increase height, thats it(just return height when size of queue becomes zero coz thats when all levels traversed.)
+//* CODE:
+//* Time: O(n), Space: O(1) same as level order traversal. space is of algorithm and not in between.
 
-                                                       Create a queue.Push root into the queue.height = 0 Loop nodeCount = size of queue
-
-                                                       // If the number of nodes at this level is 0, return height
-                                                       if nodeCount is 0 return Height;
-else increase Height
-
-    // Remove nodes of this level and add nodes of
-    // next level
-    while (nodeCount > 0)
-        pop node from front
-            push its children to queue
-                decrease nodeCount
-    // At this point, queue has nodes of next level
-    // CODE:
-    //* Time: O(n), Space: O(1) same as level order traversal. space is of algorithm and not in between.
-
-    // Iterative method to find the height of Binary Tree
-    int
-    treeHeight(node *root)
+class Solution
 {
-    // Base Case
-    if (root == NULL)
-        return 0;
-
-    // Create an empty queue for level order tarversal
-    queue<node *> q;
-
-    // Enqueue Root and initialize height
-    q.push(root);
-    int height = 0;
-
-    while (1)
+public:
+    int maxDepth(TreeNode *root)
     {
-        // nodeCount (queue size) indicates number of nodes
-        // at current lelvel.
-        int nodeCount = q.size();
-        if (nodeCount == 0)
-            return height;
-
-        height++;
-
-        // Dequeue all nodes of current level and Enqueue all
-        // nodes of next level
-        while (nodeCount > 0)
+        // iterative,max depth is same as height of tree. will be no of levels possible
+        if (!root)
+            return 0;
+        deque<TreeNode *> q;
+        int size = 0, height = 1; // min 1 height will be there since for null tree we handled already.
+        TreeNode *temp, *curr = root;
+        q.push_back(root);
+        while (!q.empty())
         {
-            node *node = q.front();
-            q.pop();
-            if (node->left != NULL)
-                q.push(node->left);
-            if (node->right != NULL)
-                q.push(node->right);
-            nodeCount--;
+            size = q.size();
+            while (size--)
+            {
+                temp = q.front();
+                q.pop_front();
+                if (temp->left)
+                    q.push_back(temp->left);
+                if (temp->right)
+                    q.push_back(temp->right);
+            }
+            if (q.size() > 0)
+                height++;
         }
+        return height;
     }
-}
+};
 int main()
 {
     FASTIO_TEMPLATE;
