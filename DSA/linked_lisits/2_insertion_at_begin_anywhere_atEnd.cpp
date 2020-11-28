@@ -15,6 +15,7 @@ a new node on the front of the list. */
 void push_front(Node **head_ref, int new_value)
 {
 	/* 1. allocate node */
+	
 	Node *workNode = new Node();
 	/* 2. put in the value */
 	workNode->value = new_value;

@@ -17,7 +17,7 @@ and what if elements are not integers but strings, how will you implement counti
 Points to be noted:
 1. Counting sort is efficient if the range of input data is not significantly greater than the number of objects to be sorted. 
     Consider the situation where the input sequence is between range 1 to 10K and the data is 10, 5, 10K, 5K.
-2. It is not a comparison based sorting. It running time complexity is O(n) with space proportional to the range of data.
+2. It is not a comparison based sorting. Its running time complexity is O(n) with space proportional to the range of data.
 3. It is often used as a sub-routine to another sorting algorithm like radix sort.
 4. Counting sort uses a partial hashing to count the occurrence of the data object in O(1).
 5. Counting sort can be extended to work for negative inputs also.
@@ -43,7 +43,7 @@ public:
 
 
 // appproach 2 using counting sort.
-
+// tutorial : https://www.youtube.com/watch?v=7zuGmKfUt7s&ab_channel=GeeksforGeeks
 //runtime: 8ms
 #include <bits/stdc++.h>
 using namespace std;
@@ -59,7 +59,7 @@ public:
     int l = 0, r = 2;
     vector<int> count(r - l + 1, 0);
     int n = nums.size();
-    for (auto x : nums)  // check proper explanation in counting sort in implementation folder
+    for (auto x : nums)  
     
     {
       ++count[x]; // no of occurrences hashed into count.
@@ -170,7 +170,7 @@ int main()
     return 0;
 }
 
-// this can be done quickly by following:
+// this can be done quickly by following:simpletst version of counting sort
 // step 1: store count of zeros, ones and two
 // while(zeros--) cout<< 0; 
 // while (ones--) cout<< 1;

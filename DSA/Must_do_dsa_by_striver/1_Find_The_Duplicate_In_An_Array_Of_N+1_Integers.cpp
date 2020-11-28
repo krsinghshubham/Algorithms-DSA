@@ -1,3 +1,4 @@
+
 //problem link:https://leetcode.com/problems/find-the-duplicate-number/
 // learning:
 // this is intital template
