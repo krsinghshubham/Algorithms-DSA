@@ -1,4 +1,4 @@
-//problem link:https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/ || insetion sort.
+//problem link: from tutorial only, implementation by me || insetion sort.
 // https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/ || gap method.
 //tutorial: https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4&ab_channel=takeUforward
 // learning:
@@ -8,7 +8,7 @@ using namespace std;
 
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
-//! APPROAH 1... Using counting sort. complexity..O(m*n)time, O(1)space
+//! APPROAH 1... Using insertion sort. complexity..O(m*n)time, O(1)space
 void merge(int arr[], int brr[], int m, int n)
 {                   // compare elements of arr with brr... if element of arr is smaller than brr its fine
                     // if greater swap and fix positon of arr into brr at suitable place in brr.
@@ -77,7 +77,7 @@ int main()
   return 0;
 }
 ////! APPROAH 2... GAP METHOD complexity... log2n*O(n) space O(n);
-// ? no initution... only algo better than coutning sort method.
+// ? no initution... only algo better than insertion sort method.
 // tell interviewr if he ask to optimise after approah 2.
 //! you cant think of this algorithm on the spot, becuase no intituion...or cant expaling why its working...
 // just in case if he ask tell him a method like do exists.

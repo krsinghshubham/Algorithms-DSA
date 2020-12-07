@@ -7,7 +7,7 @@ using namespace std;
 
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
-// ! algo in notebook
+// ! algo in notebook, this is optimised of better approach where we are creating dummy rows and columns in matrix itself.
 void setZeroes(vector<vector<int>> &matrix)
 { // creating dummy areas in matrix itself
   bool flag = true;

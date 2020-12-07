@@ -21,8 +21,8 @@ vector<vector<int>> merge(vector<vector<int>> &intervals)
             temp[1] = max(x[1], temp[1]); // keep updating right index of temp untill right index is in its current range
         else                              // means current x is not in range of previous, so store the temp and mark temp as current x;
         {
-            result.push_back(temp);
-            temp = x;
+            result.push_back(temp); // push temp
+            temp = x;   //  `       // update temp with current element
         }
         //! keep note that for last element temp wont be doing anything, becuase nothing in right to compare...
         //!so push back what ever remains in temp(the last pair probably into final result)
