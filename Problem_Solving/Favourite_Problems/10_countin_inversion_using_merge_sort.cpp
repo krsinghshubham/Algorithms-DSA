@@ -1,6 +1,7 @@
 
 // C++ program to Count Inversions in an array using Merge Sort
-//Problem and tutorial: https://www.geeksforgeeks.org/counting-inversions/
+//Problem: https://www.geeksforgeeks.org/counting-inversions/  
+//tutorial: https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -33,7 +34,7 @@ int merge(int arr[], int left, int mid, int right)
     }
 
     /* Copy the remaining elements of left subarray 
-(if there are any) to temp*/
+    (if there are any) to temp*/
     while (i <= mid - 1)
         temp[k++] = arr[i++];
 
@@ -74,6 +75,8 @@ int main()
     int arr[] = {1, 20, 6, 4, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
     int ans = mergeSort(arr, 0, n - 1);
-    cout << " Number of inversions are " << ans;
+    cout << " Number of inversions are " << ans<<endl<<"new array is: "<<endl;
+    for(int i=0;i<n;i++)
+    cout<<arr[i]<<" ";
     return 0;
 }

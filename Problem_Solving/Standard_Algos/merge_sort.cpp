@@ -1,4 +1,4 @@
-/* C program for Merge Sort */
+// another trick to implement in : fav. problems: Q(10) counting inversion using merge sort 
 // link: https://www.geeksforgeeks.org/merge-sort/
 #include <stdio.h>
 #include <stdlib.h>
