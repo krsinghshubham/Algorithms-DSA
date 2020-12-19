@@ -1,6 +1,5 @@
 // tutorial linK: https://www.youtube.com/watch?v=Y72QeX0Efxw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12&ab_channel=takeUforward
-
-// problem linK:
+// problem linK: https://leetcode.com/problems/rotate-image/
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,10 +12,10 @@ using namespace std;
 /*
 *Naive:
 * time: o(N^2), space: O(n^2)
-Optimse:
+Optimized:
 * time: o(N^2+N^2), space: O(1)
 
-take transpose ([i][j] swap with [j][i])
+take transpose, to do that  ([i][j] swap with [j][i])
 the reverse each row.
 */
 void rotate(vector<vector<int>> &matrix)
