@@ -23,7 +23,7 @@ void rotate(vector<vector<int>> &matrix)
   int size = matrix.size();
   fo(i, size)
       fo(j, i)
-          swap(matrix[i][j], matrix[j][i]); //*transpose took uptil here
+          swap(matrix[i][j], matrix[j][i]); //*transpose took till here
 
   // revresing each row.
   for (int i = 0; i < size; i++)
@@ -45,5 +45,11 @@ int main()
   cout.tie(NULL); //usuall when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
   vector<vector<int>> matrix = {{5, 1, 9, 11}, {2, 4, 8, 10}, {13, 3, 6, 7}, {15, 14, 12, 16}};
   rotate(matrix);
+  for (auto x : matrix)
+  {
+    for (auto y : x)
+      cout << y << " ";
+    cout << endl;
+  }
   return 0;
 }

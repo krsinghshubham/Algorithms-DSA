@@ -4,7 +4,7 @@
         {
             "type": "shell",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\mingw-w64\\mingw32\\bin\\g++.exe",
+            "command": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -22,7 +22,7 @@
         {
             "type": "shell",
             "label": "C/C++: cpp.exe build active file",
-            "command": "C:\\mingw-w64\\mingw32\\bin\\cpp.exe",
+            "command": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/cpp.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -43,7 +43,7 @@
         {
             "type": "shell",
             "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\MinGW\\mingw32\\bin\\gcc.exe",
+            "command": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe",
             "args": [
                 "-g",
                 "${file}",
