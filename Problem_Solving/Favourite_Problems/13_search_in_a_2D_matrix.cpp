@@ -94,7 +94,7 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
     { // 0 to 11
         int mid = lo + (high - lo) / 2;
         // cout<<"\ncurrently mid is: "<<mid<<" \n";
-        // cout<<" maatrix current for mid is: "<<matrix[mid / n][mid % n]<<"\n";
+        // cout<<" matrix current for mid is: "<<matrix[mid / n][mid % n]<<"\n";
         if (matrix[mid / n][mid % n] == target)
             return true;
         else if (matrix[mid / n][mid % n] > target)
