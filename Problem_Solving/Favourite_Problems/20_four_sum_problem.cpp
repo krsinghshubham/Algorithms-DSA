@@ -9,10 +9,10 @@ using namespace std;
 #define pb push_back
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
-                       /*
+/*
 Algorithm:
-* naive Solution with t.complexity is dicsussed in notebook.
-* Time: O(), Space: O()
+* naive Solution with t.complexity is discussed in notebook.
+* Time: O(n3*log(m)), log(m)= to insert triplets into the set, Space: O(m) , m= no of unique triplets. 
 
 *Optimized:
 * Time: O(n^3), Space: O(1)
@@ -42,7 +42,7 @@ vector<vector<int>> fourSum(vector<int> &nums, int target)
           front++;
         else if (twoSum > requiredSum)
           back--;
-        else
+        else // we got a quad. 
         {
           vector<int> quads(4, 0);
           quads[0] = nums[i];
@@ -52,9 +52,10 @@ vector<vector<int>> fourSum(vector<int> &nums, int target)
           result.pb(quads);
 
           // handling jump of front and back;
-          while (front < back && nums[front] == quads[2])
-            ++front; // for 1st itert. nums[front] will be same
-          while (front < back && nums[back] == quads[3])
+          // while (front < back && nums[front] == quads[2]) // this is other way but i think its slower. 
+           while (front < back && nums[front+1] == nums[front])
+            ++front; // for 1st iterm. nums[front] will be same
+          while (front < back && nums[back--] == nums[back])
             --back; // for 1st itert. nums[back] will be same
         }
       }

@@ -10,7 +10,7 @@ using namespace std;
 #define INF 1000000000 //10 ^9
 
 // finding max sum is easy
-// ! kadane algorithm
+// ! KADANE'S algorithm
 void printSubarray(int arr[], int l, int r)
 {
   for(int i=l;i<=r;i++)
@@ -24,7 +24,7 @@ int maxSubArraySum(int arr[], int n)
   // if sum<0.. sum=0...
   // else store max.
   int sum = 0, maxsum = INT_MIN;
-    int i=0,j=-1; // j-1 because gettting incremented at first index (0) in few case.
+    int i=0,j=-1; // j-1 because getting incremented at first index (0) in few case.
   for (int x=0;x<n;x++)
   {
     sum += arr[x]; // keep adding elements.. is current sum<0, initialize it to zero.
@@ -32,7 +32,7 @@ int maxSubArraySum(int arr[], int n)
     //maxsum = max(sum, maxsum);
     if(sum>maxsum)
     maxsum=sum, j=x;  // update right index
-    if (sum < 0)   // update lefta and right both to parent iteration.
+    if (sum < 0)   // update left and right both to parent iteration.
       sum = 0, i=x,j=x;
     
   }
