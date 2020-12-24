@@ -5,7 +5,7 @@
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //usually when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //done to stop waiting of scanf/printf sync
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 /*
@@ -13,7 +13,7 @@ Algorithm:
 *Naive:
 * Time: O(n), Space: O()
 
-*Optimised:
+*Optimized:
 * Time: O(logN),sayad Space: O(logn)
 if n is negative we have to make it positve:
         but since -ve of INT_MIN will give integer overflow for int, we have to use long long init.
@@ -61,7 +61,7 @@ double myPow(double x, int n)
 }
 int main()
 {
-    FASTIO_TEMPLATE;
+    FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
     double x;
     int n;
     cin >> x >> n;

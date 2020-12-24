@@ -1,4 +1,4 @@
-//! two approaches, 2nd optimised approach is below
+//! two approaches, 2nd Optimized approach is below
 //problem link: https://leetcode.com/problems/majority-element-ii/
 // tutorial linK:https://www.youtube.com/watch?v=yDbkQd9t2ig&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=16&ab_channel=takeUforward
 // * learning:  MOORE'S VOTING ALGORITHM
@@ -6,7 +6,7 @@
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //usually when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //done to stop waiting of scanf/printf sync
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 //!BELOW DOWN IS BEST SOLUTION FOR THIS PROBLEM
@@ -16,14 +16,13 @@ USE HASH MAP
 *Naive:
 * Time: O(n^2), Space: O(1)
 
-*Optimised and best: //Boyer moore's voting algo.
-* Time: O(n), Space: O(1)
+*Optimized and best: 
 */
-vector<int> majrityElement(vector<int> &nums)
+vector<int> majorityElement(vector<int> &nums)
 {
     // * Time: O(NLOGN), Space: O(N) // C++ MAP TAKES O(NOGN), SEARCH 1, AND O(N) IS WORST CASE
 
-    //! hash map implementaion, time nlogn  space o(n)
+    //! hash map implementation, time nlogn  space o(n)
     int size = nums.size();
     unordered_map<int, int> m;
     for (auto x : nums)
@@ -47,7 +46,9 @@ vector<int> majrityElement(vector<int> &nums)
 }
 vector<int> majorityElement(vector<int> &nums)
 {
-    //! BOYER MOORE'S VOTING ALGORITHM, time o(N)  space o(1)
+    //! BOYER MOORE'S VOTING ALGORITHM, time o(N)  space o(1), watching tut every time during revision is recommended.
+    //Boyer moore's voting algo.
+    //* Time: O(n)+O(n)=O(n), Space: O(1)
     int cr_1 = -1;
     int cr_2 = -1;
     int count_1 = 0;
@@ -92,13 +93,14 @@ vector<int> majorityElement(vector<int> &nums)
         ans.push_back(cr_2);
     return ans;
 }
+//! think further for a pattern if majority element is greater than floor of (4, 5... etc) elemnets.
 int main()
 {
-    FASTIO_TEMPLATE;
+    FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
     // vector<int> nums = {2, 2, 1, 1, 1, 2, 2};
     vector<int> nums = {1, 1, 1, 3, 3, 2, 2, 2};
 
-    vector<int> results = majrityElement(nums);
+    vector<int> results = majorityElement(nums);
     for (auto x : results)
         cout << x << " ";
     cout << endl;

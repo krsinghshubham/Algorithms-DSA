@@ -77,7 +77,7 @@ int main()
         //     matrixMultiplication(matrix, I, dim);  //each time we will update I.
         // }
 
-        //* OPTIMISED METHOD using Binray exponentiation, COMPLEXITY M^3*logN
+        //* Optimized METHOD using Binray exponentiation, COMPLEXITY M^3*logN
         while (power)
         {
             if (power % 2)

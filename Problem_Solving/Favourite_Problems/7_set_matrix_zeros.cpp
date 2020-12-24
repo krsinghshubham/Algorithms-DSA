@@ -7,7 +7,7 @@ using namespace std;
 
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
-// ! algo in notebook, this is optimised of better approach where we are creating dummy rows and columns in matrix itself.
+// ! algo in notebook, this is Optimized of better approach where we are creating dummy rows and columns in matrix itself.
 void setZeroes(vector<vector<int>> &matrix)
 { // creating dummy areas in matrix itself
   bool flag = true;
@@ -38,7 +38,7 @@ int main()
 {
   cin.tie(NULL);
   ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-  cout.tie(NULL);                                                 //usuall when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+  cout.tie(NULL);                                                 //done to stop waiting of scanf/printf sync
                                                                   //  vector<vector<int>> matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}}; // vector 1.
   vector<vector<int>> matrix = {{1, 1, 1}, {1, 1, 1}, {0, 1, 1}}; //vector 2. delicate case // expected output= (0,1,1),(0,1,1),(0,0,0)
 

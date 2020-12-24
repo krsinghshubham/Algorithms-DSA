@@ -13,7 +13,7 @@ using namespace std;
 Algorithm:
 
 i am shubham kumar singh
-*Optimised:
+*Optimized:
 * Time: O(), Space: O()
 */
 

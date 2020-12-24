@@ -4,5 +4,8 @@
         "vector": "cpp",
         "*.tcc": "cpp",
         "ostream": "cpp"
-    }
+    },
+    "cSpell.ignoreWords": [
+        "optimized"
+    ]
 }

@@ -2,13 +2,13 @@
 // tutorial linK:
 //! morriss: (ALSO CALLED THREADED BINARY TREE) https://www.youtube.com/watch?v=9ChGER8A3Ps&ab_channel=KarthikChennupati
 // stack: https://www.youtube.com/watch?v=nzmtCFNae9k
-// stack wale ka video se keval idea, code mera. video wale code is not that much optimised.just understand the flow from it.
+// stack wale ka video se keval idea, code mera. video wale code is not that much Optimized.just understand the flow from it.
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define pb push_back
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9

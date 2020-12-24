@@ -1,8 +1,8 @@
 //problem link:
 // tutorial linK:https://www.youtube.com/watch?v=geLyvdjxQNg&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=6&ab_channel=CodeNCode
 // tutorial: https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
-// learning: optimised method for finding it.
-//! OPTIMISED !!
+// learning: Optimized method for finding it.
+//! Optimized !!
 #include <bits/stdc++.h>
 
 using namespace std;

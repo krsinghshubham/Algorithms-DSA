@@ -5,7 +5,7 @@
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //usually when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //done to stop waiting of scanf/printf sync
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 /*
@@ -13,15 +13,13 @@ Algorithm:
 * Approach 1: Brute Force
 The brute force approach is simple. 
 Loop through each element xx and find if there is another value that equals to target - xtarget−x.
-*Approach 3: One-pass Hash Table
+*Approach 2: One-pass Hash Table 
+Note: this particularly guarantees that only one such pair exists. 
 we need to keep the indices also so will use map
 in one-pass. While we iterate and inserting elements into the table, we also look back to check if current element's complement already exists in the table. 
 If it exists, we have found a solution and return immediately
 Time complexity : O(n) We traverse the list containing nn elements only once. Each look up in the table costs only O(1)O(1) time.
 Space complexity : O(n) The extra space required depends on the number of items stored in the hash table, which stores at most nn elements.
-
-*Optimised:
-* Time: O(), Space: O()
 */
 vector<int> twoSum(vector<int> &nums, int target)
 {
@@ -44,7 +42,7 @@ vector<int> twoSum(vector<int> &nums, int target)
 }
 int main()
 {
-    FASTIO_TEMPLATE;
+    FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
     vector<int> nums = {2, 6, 5, 8, 15};
 
     int target = 14;

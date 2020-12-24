@@ -8,7 +8,7 @@
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //usually when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //done to stop waiting of scanf/printf sync
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 
@@ -18,7 +18,7 @@ Algorithm:
 * Time: O(n^2), better: O(n*log(m)), Space: O(1)
 
 *Optimized:
-* Time: O(n), Space: O(1) // linear traversal.
+* Time: O(n), Space: O(1) // linear traversal.// this is a better approach for leetcode problem.
 */
 bool search(int mat[][4], int size, int target)
 {
@@ -44,7 +44,7 @@ bool search(int mat[][4], int size, int target)
 }
 int main()
 {
-    FASTIO_TEMPLATE;
+    FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
     int mat[4][4] = {{10, 20, 30, 40}, // suppose target 33
                      {15, 25, 35, 45},
                      {27, 29, 37, 48},
@@ -64,16 +64,13 @@ int main()
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //usually when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //done to stop waiting of scanf/printf sync
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 /*
-Algorithm:
-*Naive:
-* Time: O(), Space: O()
 
-*Optimised:
-* Time: O(), Space: O()
+*Optimized:
+* Time: O(log(n)), Space: O()
 */
 bool searchMatrix(vector<vector<int>> &matrix, int target)
 {
@@ -86,7 +83,7 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
     // ? implement binary search on it.
      if(!matrix.size()) // when size zero
             return false;
-    int n = matrix[0].size(); // we require no of colums.
+    int n = matrix[0].size(); // we require no of columns.
     int m=matrix.size();
     int lo = 0;
     int high = n*m - 1; //! high is (n*m) and not n-1;
@@ -114,7 +111,7 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
 
 int main()
 {
-    FASTIO_TEMPLATE;
+    FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
     vector<vector<int>> Matrix = {{1, 3, 5, 7}, {10, 11, 12, 16}, {23, 30, 34, 50}};
     //  vector<vector<int>> Matrix = {{1},{3}};
 

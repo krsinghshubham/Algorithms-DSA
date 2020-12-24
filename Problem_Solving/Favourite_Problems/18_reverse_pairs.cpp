@@ -5,7 +5,7 @@
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
-#define FASTIO_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //usually when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+#define FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0); //done to stop waiting of scanf/printf sync
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 /*
@@ -13,8 +13,10 @@ Algorithm:
 *Naive:
 * Time: O(n^2), Space: O(1)
 
-*Optimised:
-* Time: O(nlgon)+(n)+O(n) for(algoirthm, merger operaton and counting operation respectiverly... counting is o(n) because we are not starting j from 1st index of right array every time , istead we are resuming from the last stored value of j itself.), Space: O(N) for temporary array storage.
+*Optimized:
+* Time: O(nlog(n))+O(n) for(algorithm of merge sort, and counting operation respectively... 
+counting is o(n) because we are not starting j from 1st index of right array every time , 
+instead we are resuming from the last stored value of j itself.), Space: O(N) for temporary array storage.
 merge sort, returning result every time.
 in merge function get result before  mergining
 */
@@ -24,15 +26,15 @@ int merge(vector<int> &nums, int low, int mid, int high)
     for(int i=low;i<=mid;i++)
     {
         while(j<=high && nums[i]>2LL*nums[j]) //! to convert 2 from int to long long so as the compiler auto converts it
-        j++;
-        count+=j-(mid+1);
+        j++;   //? THIS IS ACTUALLY VERY SMART AS j IS  BEGINNING FROM LAST UPDATED POSITION ALONE, DOES DECREASING TIME COMPLEXITY.
+        count+=j-(mid+1); // O(N)
 
     }
 
 
     //* now merging
-    int n1 = mid - low + 1;
-    int n2 = high - mid;
+    // int n1 = mid - low + 1;
+    // int n2 = high - mid;
     int left = low, right = mid + 1;
     vector<int> temp;
     while (left <= mid && right <= high)
@@ -48,7 +50,7 @@ int merge(vector<int> &nums, int low, int mid, int high)
         temp.push_back(nums[left++]);
     while (right <= high)
         temp.push_back(nums[right++]);
-    // uptill here temp array with sorted element created,put it back in nums
+    // up till here temp array with sorted element created,put it back in nums
     for (int i = low; i <= high; i++)
         nums[i] = temp[i - low];
     return count;
@@ -74,7 +76,7 @@ int reversePairs(vector<int> &nums)
 }
 int main()
 {
-    FASTIO_TEMPLATE;
+    FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
     vector<int> nums = {40, 25, 19, 12, 9, 6, 2};
 
     cout<<reversePairs(nums)<<endl;

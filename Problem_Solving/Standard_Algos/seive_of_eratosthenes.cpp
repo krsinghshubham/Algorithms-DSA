@@ -12,7 +12,7 @@ int main()
 {
     cin.tie(NULL);
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    cout.tie(NULL); //usuall when cin then it waits for cout and the it syncs,,, these 3 flag stops the sync and tell compiler i wont use scanf , printf after/before cout... so u need not to waste time and move ahead.
+    cout.tie(NULL); //done to stop waiting of scanf/printf sync
     int n;
     cin >> n;
     if(n<=2)
