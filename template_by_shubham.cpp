@@ -17,12 +17,6 @@ Algorithm:
 
 int main()
 {
-  FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
-  int tc;
-  cin>>tc;
-  while(tc--)
-  {
-
-  }
+  
   return 0;
 }

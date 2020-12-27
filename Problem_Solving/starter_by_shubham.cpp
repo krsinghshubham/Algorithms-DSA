@@ -17,7 +17,11 @@ Algorithm:
 
 int main()
 {
-
-  
+// 12=1100
+  int r=12;
+  int k=(int)log2(r);
+  //int k=(int)log2(r & -r)+1;
+  cout<<k;
   return 0;
 }
+
