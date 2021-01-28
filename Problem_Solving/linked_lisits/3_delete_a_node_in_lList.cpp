@@ -47,7 +47,7 @@ void deleteNode(Node **head, int position)
     // Store pointer to the next of node to be deleted
     //* wrong way
     // temp->next= temp->next->next;     // because memory not cleared
-    // free(temp->next); // Free memory but what if its the not the last node, then traversing will go infinte.
+    // free(temp->next); // Free memory but what if its the not the last node, then traversing will go infinite.
     //*
     //
     //* correct way....

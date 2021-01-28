@@ -27,7 +27,7 @@ void printForwared(Node *head)
 	printForwared(head->next);
 }
 //! UNDERSATING OF BELOW CONCEPT IS VERY IMPORTANT.
-//* fkunction to print reverse of Linked list WITHOUT ACTUALLY REVERSING IT.
+//* function to print reverse of Linked list WITHOUT ACTUALLY REVERSING IT.
 void printReverse(Node *head)
 {
 	if (head == nullptr)
@@ -37,6 +37,11 @@ void printReverse(Node *head)
 }
 //*
 /* Function to reverse the linked list */
+/*
+Stack based solution to print linked list reverse. Push all nodes one by one to a stack. 
+Then one by one pop elements from stack and print. This also requires extra space.
+*/
+
 void backPrintWithoutRecursion(Node **head, int n)
 {
 	int j = 0;
@@ -44,12 +49,12 @@ void backPrintWithoutRecursion(Node **head, int n)
 	while (current != NULL)
 	{
 		// For each node, print proper number spaces before printing it
-		for (int i = 0; i < 2 * (n - j); i++) //*2 beacuse spaces will consume spaces too.
+		for (int i = 0; i < 2 * (n - j); i++) //*2 because spaces will consume spaces too.
 			printf(" ");
 
 		// use of carriage return to move back
 		// and print.
-		printf("%d\r", current->data); // ! cairrage return SYMBOL \r
+		printf("%d\r", current->data); // ! carriage return SYMBOL \r
 
 		current = current->next;
 		j++;
@@ -72,7 +77,7 @@ int main()
 	push_forward(&head, 3);
 	push_forward(&head, 2);
 	push_forward(&head, 1);
-	cout << "Backward taversal using recursion is: \n";
+	cout << "Backward traversal using recursion is: \n";
 	printReverse(head);
 	cout << "\nForward traversal using recurion is: \n";
 	printForwared(head);

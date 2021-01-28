@@ -18,57 +18,12 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+void push_forward(ListNode **head_ref, int new_data);
+void print(ListNode *head);
+bool isPalindrome(ListNode *head);
+
 /*
 Algorithm:
-
-* Time: O(N), Space: O(1)
-*/
-class Solution
-{
-public:
-    ListNode *reverse(ListNode *head)
-    {
-        // 1-  >  2-> 3-> 2->1
-        ListNode *prev = nullptr;
-        ListNode *curr = head, *nextNode;
-        // some loop
-        while (curr != nullptr)
-        {
-            nextNode = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = nextNode;
-        }
-        return prev;
-    }
-
-    bool isPalindrome(ListNode *head)
-    {
-        ListNode *slow = head, *fast = head;
-
-        while (fast && fast->next) // even and odd both
-        {
-            fast = fast->next->next;
-            slow = slow->next;
-        }
-        //  slow= mid;
-        //  if(slow->next==nullptr && slow->val!=head->val)
-        //      return false;
-        // cout<<slow->val;
-        ListNode *rvNew = reverse(slow); // reversing from mid-next
-        while (rvNew != nullptr)
-        {
-            if (rvNew->val != head->val)
-                return false;
-            head = head->next;
-            // cout<<rvNew->val<<" ";
-            rvNew = rvNew->next;
-        }
-
-        return true;
-    }
-};
-
 /*
 1-  >  2-> 3-> 2->1
            m
@@ -78,9 +33,51 @@ find mid....
 pass next of mid to reverse and store next of mid.
 while(next of mid!=null)
 compare, failed return true;
-
-
+* Time: O(N), Space: O(1)
 */
+
+ListNode *reverse(ListNode *head)
+{
+    // 1-  >  2-> 3-> 2->1
+    ListNode *prev = nullptr;
+    ListNode *curr = head, *nextNode;
+    // some loop
+    while (curr != nullptr)
+    {
+        nextNode = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = nextNode;
+    }
+    return prev;
+}
+
+bool isPalindrome(ListNode *head)
+{
+    ListNode *slow = head, *fast = head;
+
+    while (fast && fast->next) // even and odd both
+    {
+        fast = fast->next->next;
+        slow = slow->next;
+    }
+    //  slow= mid; // ! this commented code will give wrong output for,  Input: [1,1,2,1] Output:true Expected: false
+    //  if(slow->next==nullptr && slow->val!=head->val)
+    //      return false;
+    // cout<<slow->val;
+    ListNode *rvNew = reverse(slow); // reversing from mid-next
+    while (rvNew != nullptr)
+    {
+        if (rvNew->val != head->val
+            return false;
+        head = head->next;
+        // cout<<rvNew->val<<" ";
+        rvNew = rvNew->next;
+    }
+
+    return true;
+}
+
 int main()
 {
     ListNode *head = nullptr;
@@ -116,3 +113,24 @@ int main()
 
     return 0;
 }
+
+void push_forward(ListNode **head_ref, int new_data)
+{
+
+    ListNode *workingNode = new ListNode();
+    workingNode->val = new_data;
+    workingNode->next = *head_ref;
+    *head_ref = workingNode;
+}
+void print(ListNode *head) // return size coz required in one of the function
+{
+    int size = 0;
+    while (head != nullptr)
+    {
+        cout << head->val << " ";
+        head = head->next;
+        size++;
+    }
+    //return size;
+}
+// LINKED LIST TEMPLATE

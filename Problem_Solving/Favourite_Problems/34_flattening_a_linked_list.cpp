@@ -10,38 +10,23 @@ using namespace std;
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
 
-struct ListNode
+class Node
 {
+public:
     int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+    Node *prev;
+    Node *next;
+    Node *child;
 };
-void push_forward(ListNode **head_ref, int new_data)
-{
 
-    ListNode *workingNode = new ListNode();
-    workingNode->val = new_data;
-    workingNode->next = *head_ref;
-    *head_ref = workingNode;
-}
-void print(ListNode *head) // return size coz required in one of the function
-{
-    int size = 0;
-    while (head != nullptr)
-    {
-        cout << head->val << " ";
-        head = head->next;
-        size++;
-    }
-    //return size;
-}
-// LINKED LIST TEMPLATE
 /*
 Algorithm:
-
-* Time: O(), Space: O()
+Start form the head , move one step each time to the next node
+When meet with a node with child, say node p, follow its child chain to the end and connect the tail node with p.next, by doing this we merged the child chain back to the main thread
+Return to p and proceed until find next node with child.
+Repeat until reach null
+keep the diag. handy
+* Time: O(N), Space: O(1)
 */
 
 class Solution
@@ -65,7 +50,7 @@ public:
                     temp = temp->next;
 
                 temp->next = p->next;
-                if (p->next) // * IMPORTANT , COSIDER TC: [1,null,2,null,3,null] THAT IS 3 NODES CONNECTED VETICALLY WITH NEXT NULL FOR ALL
+                if (p->next) // * IMPORTANT, CONSIDER TC: [1,null,2,null,3,null] THAT IS 3 NODES CONNECTED VERTICALLY WITH NEXT NULL FOR ALL
                     p->next->prev = temp;
                 p->child->prev = p;
 
@@ -76,26 +61,3 @@ public:
         return head;
     }
 };
-
-// */
-int main()
-{
-    ListNode *head = nullptr;
-    // Let us create linked list 1->2->3->4
-    push_forward(&head, 5);
-    push_forward(&head, 4);
-    push_forward(&head, 3);
-    push_forward(&head, 2);
-    push_forward(&head, 1);
-    ListNode *headTwo = nullptr;
-    // Let us create linked list 2,5,7,8
-    push_forward(&headTwo, 8);
-    push_forward(&headTwo, 7);
-    push_forward(&headTwo, 5);
-    push_forward(&headTwo, 2);
-    print(head);
-    cout << endl;
-    print(headTwo);
-    cout << endl;
-    return 0;
-}

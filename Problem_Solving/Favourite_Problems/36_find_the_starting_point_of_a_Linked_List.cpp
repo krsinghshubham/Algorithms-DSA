@@ -1,5 +1,6 @@
-//problem link:  https://leetcode.com/problems/add-two-numbers/
-// tutorial linK:
+// done already concept same one in array section.
+//problem link: https://leetcode.com/problems/linked-list-cycle-ii/
+// tutorial linK: // https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=11&t=842s&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -21,36 +22,31 @@ struct ListNode
 void push_forward(ListNode **head_ref, int new_data);
 void print(ListNode *head);
 
-/*
-Algorithm:
-simple carry and sum, implemented smartly... not efficient
-
-* Time: O(max(m,n)), Space: O(max(m,n)+1)
-*/
-ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
+ListNode *detectCycle(ListNode *head)
 {
-    ListNode *fake = new ListNode(0);
-    ListNode *temp = fake;
-    int carry = 0;
-    while (l1 || l2)
-    {
-        int x = l1 ? l1->val : 0;
-        int y = l2 ? l2->val : 0;
-        int sum = x + y + carry;
-        cout << sum << endl;
-        fake->next = new ListNode(sum % 10);
-        fake = fake->next; //!fake is now poiting to the update pointer
-        carry = sum / 10;
-        if (l1)
-            l1 = l1->next;
-        if (l2)
-            l2 = l2->next;
-    }
-    if (carry > 0) //! leftover carry
-        fake->next = new ListNode(carry);
-    return temp->next;
-}
+    ListNode *slow = head;
+    ListNode *fast = head;
+    if (!head || !head->next)
+        return nullptr;
 
+    do
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+        if (!fast || !fast->next) // in case there is no loop at all.
+            return nullptr;
+    } while (slow != fast);
+    // slow == fast now. now move one pointer to start and do again, 2nd meet is ans.
+    fast = head;
+    if (slow == head) // ! IMPORTANT NOTE.
+        return slow; // case when 0th node is the ans.because it will same condition again and again
+    do
+    {
+        slow = slow->next;
+        fast = fast->next;
+    } while (slow != fast);
+    return slow; // either.
+}
 int main()
 {
     ListNode *head = nullptr;

@@ -9,7 +9,7 @@ using namespace std;
 #define pb push_back
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
-/*
+                       /*
 Algorithm:
 * naive Solution with t.complexity is discussed in notebook.
 * Time: O(n3*log(m)), log(m)= to insert triplets into the set, Space: O(m) , m= no of unique triplets. 
@@ -21,6 +21,7 @@ algorithm in notebook
 
 vector<vector<int>> fourSum(vector<int> &nums, int target)
 {
+
   vector<vector<int>> result;
   if (nums.size() == 0)
     return result;
@@ -42,25 +43,24 @@ vector<vector<int>> fourSum(vector<int> &nums, int target)
           front++;
         else if (twoSum > requiredSum)
           back--;
-        else // we got a quad. 
+        else
         {
           vector<int> quads(4, 0);
           quads[0] = nums[i];
           quads[1] = nums[j];
           quads[2] = nums[front];
           quads[3] = nums[back];
-          result.pb(quads);
+          result.push_back(quads);
 
           // handling jump of front and back;
-          // while (front < back && nums[front] == quads[2]) // this is other way but i think its slower. 
-           while (front < back && nums[front+1] == nums[front])
-            ++front; // for 1st iterm. nums[front] will be same
-          while (front < back && nums[back--] == nums[back])
+          while (front < back && nums[front] == quads[2])
+            ++front; // for 1st itert. nums[front] will be same
+          while (front < back && nums[back] == quads[3])
             --back; // for 1st itert. nums[back] will be same
         }
       }
       // handling jump of j...
-      while (j + 1 < n && nums[j + 1] == nums[j]) //! j+1 < n and not j<n because parent loop also incrementing i and j ecery step, so we need to stay two step back. similarly for i
+      while (j + 1 < n && nums[j + 1] == nums[j])
         ++j;
     }
     // handling jump of i
@@ -69,13 +69,12 @@ vector<vector<int>> fourSum(vector<int> &nums, int target)
   }
   return result;
 }
-
 int main()
 {
   FAST_INPUT_OUTPUT_TEMPLATE_TEMPLATE;
   vector<int> nums = {4, 3, 3, 4, 4, 2, 1, 2, 1, 1};
   int target = 9;
-  vector<vector<int>> x = fourSum(nums,target);
+  vector<vector<int>> x = fourSum(nums, target);
   for (auto p : x)
   {
     for (auto y : p)

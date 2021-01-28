@@ -11,7 +11,7 @@ string repeat(string s, int n)
 }
 int main()
 {
-  int t;
+  int t=1;
  cin >> t;
   while (t--)
   {

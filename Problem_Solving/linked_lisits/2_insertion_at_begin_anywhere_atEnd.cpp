@@ -1,4 +1,4 @@
-//* reimplemnentation by me.
+//* re implementation by me.
 // all insertion methods on Linked List
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,7 +8,7 @@ public:
 	int value;
 	Node *next;
 };
-// ! keep note the arguemnt for head. ** vs *
+// ! keep note the argument for head. ** vs *
 /* Given a reference (pointer to pointer) 
 to the head of a list and an int, inserts 
 a new node on the front of the list. */
@@ -55,7 +55,7 @@ void push_back(Node **head_ref, int new_value)
 {
 	/* 1. allocate node */
 	Node* workNode = new Node();
-	Node *last = *head_ref; /* used in step 5*/ // to safegurad the next value;
+	Node *last = *head_ref; /* used in step 5*/ // to safeguard the next value;
 
 	/* 2. put in the value */
 	workNode->value = new_value;
@@ -76,7 +76,7 @@ void push_back(Node **head_ref, int new_value)
 	/* 6. Change the next of last node */
 	last->next = workNode;
 	return;
-	//* Time complexity O(n) as we traversall all the way to get the last pointer.
+	//* Time complexity O(n) as we traversals all the way to get the last pointer.
 	// if we were to maintain a seprate pointer to store the address of last pointer too it would have took O(1) only.
 }
 void printList(Node *node)

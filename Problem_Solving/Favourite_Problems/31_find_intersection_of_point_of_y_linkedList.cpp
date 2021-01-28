@@ -18,26 +18,8 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-void push_forward(ListNode **head_ref, int new_data)
-{
-
-    ListNode *workingNode = new ListNode();
-    workingNode->val = new_data;
-    workingNode->next = *head_ref;
-    *head_ref = workingNode;
-}
-void print(ListNode *head) // return size coz required in one of the function
-{
-    int size = 0;
-    while (head != nullptr)
-    {
-        cout << head->val << " ";
-        head = head->next;
-        size++;
-    }
-    //return size;
-}
-// LINKED LIST TEMPLATE
+void push_forward(ListNode **head_ref, int new_data);
+void print(ListNode *head);
 /*
 Algorithm:
 Approach 1: Brute Force
@@ -94,15 +76,15 @@ ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 //!____________________
 /*
 Algorithm:
-use case: metro map... find the intesecting map... we just have to find already meger list, not merge them
+use case: metro map... find the intersecting map... we just have to find already merged list, not merge them
 ok... so 
 get both length... find difference... 
 skip that much in big one...
 now both will be at same distance from merging point...
-move togeher untill same...
+move together until same...
 return
-Another approcah might be two pointer technique... when one list exhauset move it to the first of 2nd list, and when 2nd list exhaust move it to the first one ... this way they will traverse all nodes
-* OPTMISED SOLUTION
+Another approach might be two pointer technique... when one list exhaust move it to the first of 2nd list, and when 2nd list exhaust move it to the first one ... this way they will traverse all nodes
+* OPTIMIZED SOLUTION
 * Time: O(m+n), Space: O(1)
 
 */
@@ -163,7 +145,28 @@ ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 
     return nullptr;
 }
-
+//todo:  TWO POINTER TECHNIQUE: FASTEST
+//ALGO: two pointer technique... when one list exhaust move it to the first of 2nd list, and when 2nd list exhaust move it to the first one ... this way they will traverse all nodes
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        // 2 pointer: 
+        ListNode* tempA=headA;
+        ListNode* tempB=headB;
+        while(headA!=headB)
+              {  
+                if(!headA)
+                    headA=tempB;
+                else
+                    headA=headA->next;
+                if(!headB)
+                    headB=tempA;
+                else
+                    headB=headB->next;   
+              } 
+        return headA; // can return either.
+    }
+};
 // main fuction not complete
 int main()
 {
@@ -177,3 +180,23 @@ int main()
     print(head);
     return 0;
 }
+void push_forward(ListNode **head_ref, int new_data)
+{
+
+    ListNode *workingNode = new ListNode();
+    workingNode->val = new_data;
+    workingNode->next = *head_ref;
+    *head_ref = workingNode;
+}
+void print(ListNode *head) // return size coz required in one of the function
+{
+    int size = 0;
+    while (head != nullptr)
+    {
+        cout << head->val << " ";
+        head = head->next;
+        size++;
+    }
+    //return size;
+}
+// LINKED LIST TEMPLATE

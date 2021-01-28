@@ -25,42 +25,25 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-void push_forward(ListNode **head_ref, int new_data)
-{
+void push_forward(ListNode **head_ref, int new_data);
+void print(ListNode *head);
 
-    ListNode *workingNode = new ListNode();
-    workingNode->val = new_data;
-    workingNode->next = *head_ref;
-    *head_ref = workingNode;
-}
-void print(ListNode *head) // return size coz required in one of the function
-{
-    int size = 0;
-    while (head != nullptr)
-    {
-        cout << head->val << " ";
-        head = head->next;
-        size++;
-    }
-    //return size;
-}
-// LINKED LIST TEMPLATE
 ListNode *mergeTwoLists(ListNode *l1, ListNode *l2)
 {
     ListNode dummy(-1); // dummy , consider its start of list
     ListNode *last = &dummy; //
     /*
     declaring as follows would have gave wrong ans since we are just storing address,not value.
-    study next line of return to get a new concept
-    ListNode *dummy; // dummy , consider its start of list
+    ListNode *dummy; 
     ListNode *last = dummy;
+    study next line of return to get a new concept
     */
     while (l1 and l2) // jab tak dono hai
     {
         if (l1->val < l2->val)
         {    //imp 3 step process
             last->next = l1;
-            last=l1; // update last
+            last=last->next; // updating last
             l1 = l1->next;
         }
         else
@@ -109,3 +92,24 @@ int main()
 
     return 0;
 }
+
+void push_forward(ListNode **head_ref, int new_data)
+{
+
+    ListNode *workingNode = new ListNode();
+    workingNode->val = new_data;
+    workingNode->next = *head_ref;
+    *head_ref = workingNode;
+}
+void print(ListNode *head) // return size coz required in one of the function
+{
+    int size = 0;
+    while (head != nullptr)
+    {
+        cout << head->val << " ";
+        head = head->next;
+        size++;
+    }
+    //return size;
+}
+// LINKED LIST TEMPLATE

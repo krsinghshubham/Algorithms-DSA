@@ -121,7 +121,7 @@ void sort012(int a[], int arr_size)
     step 1: fix low, mid at start,high at end
     2: if zero swap with mid, low++, mid++
     3. if 1:, then mid++,
-    4.. if 2 :swapa with high, high--;
+    4.. if 2 :swap with high, high--;
 
     */
     int low = 0;
@@ -142,7 +142,7 @@ void sort012(int a[], int arr_size)
         case 2:
             swap(a[mid], a[high]);
             high--;
-            // we are not incementing mid at this step because we dont know the content of a[high], if its zero then in next step
+            // we are not incrementing mid at this step because we dont know the content of a[high], if its zero then in next step
             // we have to transfer it correct place.
             break;
         }
