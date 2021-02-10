@@ -8,7 +8,8 @@ using namespace std;
 
 #define PI 3.1415926535897932384626
 #define INF 1000000000 //10 ^9
-
+// * SOLVE THIS PROBLEM IF YOU THINK YOU UNDERSTOOD THIS ALGORTIHM: ( EXCELLENT APPLICATION ): 
+// * https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/
 // finding max sum is easy
 // ! KADANE'S algorithm
 void printSubarray(int arr[], int l, int r)
