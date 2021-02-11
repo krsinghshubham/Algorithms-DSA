@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/reverse-words-in-a-string/
-// tutorial linK: https://www.youtube.com/watch?v=tEbOmwxmuls&ab_channel=codebix
+// Reference linK: https://www.youtube.com/watch?v=tEbOmwxmuls&ab_channel=codebix
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -31,7 +31,7 @@ dp by makin a table bottom up.
 two pointer, two lengths for each centre. 
 one length to check possibility of even length palindrome by passing i an i.
 2nd length is to check possibiltiy of odd length palidrome by passing i and i+1.
-tutorial: https://www.youtube.com/watch?v=OwjIfAy1OqA&ab_channel=jayatitiwari 
+Reference: https://www.youtube.com/watch?v=OwjIfAy1OqA&ab_channel=jayatitiwari 
 * Time: O(n^2), Space: O(1)
 */
 /*

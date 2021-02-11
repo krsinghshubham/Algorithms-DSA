@@ -1,5 +1,5 @@
 //problem link:  https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-// tutorial linK: LEETCODE EDITORIAL
+// Reference linK: LEETCODE EDITORIAL
 // learning: TWO POINTER TECHNIQUE
 #include <bits/stdc++.h>
 using namespace std;

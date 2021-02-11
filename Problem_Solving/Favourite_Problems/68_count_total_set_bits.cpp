@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/counting-bits/
-// tutorial linK:   https://www.youtube.com/watch?v=awxaRgUB4Kw
+// Reference linK:   https://www.youtube.com/watch?v=awxaRgUB4Kw
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

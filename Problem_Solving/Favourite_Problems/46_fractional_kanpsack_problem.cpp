@@ -1,5 +1,5 @@
 //problem link: https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1#
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/3sum/
-// tutorial linK: https://www.youtube.com/watch?v=WdaeixEeAVs
+// Reference linK: https://www.youtube.com/watch?v=WdaeixEeAVs
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

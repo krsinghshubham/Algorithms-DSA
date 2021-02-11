@@ -1,5 +1,5 @@
 //problem link: https://www.spoj.com/problems/BUGLIFE/
-// tutorial linK:/www.youtube.com/watch?v=nMQ4C3mOBEY&list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh&index=10&ab_channel=CodeNCode
+// Reference linK:/www.youtube.com/watch?v=nMQ4C3mOBEY&list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh&index=10&ab_channel=CodeNCode
 // learning: clear array if same is being used for multiple TCs.
 #include <bits/stdc++.h>
 using namespace std;

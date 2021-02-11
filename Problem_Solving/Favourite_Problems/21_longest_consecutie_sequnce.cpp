@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/longest-consecutive-sequence/solution/
-// tutorial linK: myself
+// Reference linK: myself
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -67,7 +67,7 @@ int longestConsecutive(vector<int> &nums)
 
 */
 
-int longestConsecutive(vector<int> &nums) //?todo: wait i implemented with a variation in which we checked if its successor not exitsts, while in tutorial
+int longestConsecutive(vector<int> &nums) //?todo: wait i implemented with a variation in which we checked if its successor not exitsts, while in Reference
                                           //todo ... we checked if its precedoor not exits.
 {
     unordered_set<int> s(nums.begin(), nums.end()); // for O(1) lookup time.

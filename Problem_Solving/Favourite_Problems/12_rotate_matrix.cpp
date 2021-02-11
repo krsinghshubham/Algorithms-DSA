@@ -1,4 +1,4 @@
-// tutorial linK: https://www.youtube.com/watch?v=Y72QeX0Efxw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=Y72QeX0Efxw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12&ab_channel=takeUforward
 // problem linK: https://leetcode.com/problems/rotate-image/
 // learning:
 #include <bits/stdc++.h>

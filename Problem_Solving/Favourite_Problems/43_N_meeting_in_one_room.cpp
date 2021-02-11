@@ -1,5 +1,5 @@
 //problem link: https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
-// tutorial linK: striver's is not good, my own code is better.
+// Reference linK: striver's is not good, my own code is better.
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

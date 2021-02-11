@@ -1,9 +1,9 @@
 //problem link:https://www.hackerearth.com/challenges/competitive/code-monk-disjoint-set-union-union-find/algorithm/teachers-dilemma-3/
-// tutorial linK: https://www.youtube.com/watch?v=_0YjD1HcWW8&list=PL2q4fbVm1Ik4JdzE2Bv_UUGBz0TXEIrai&index=5&ab_channel=CodeNCode
+// Reference linK: https://www.youtube.com/watch?v=_0YjD1HcWW8&list=PL2q4fbVm1Ik4JdzE2Bv_UUGBz0TXEIrai&index=5&ab_channel=CodeNCode
 // learning: disjoin to find no of groups
 // TEACHERS DILEMMA.
 // ! thoery in notebook.
-//refrence code //https://ideone.com/cHdgmU
+//Reference code //https://ideone.com/cHdgmU
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long

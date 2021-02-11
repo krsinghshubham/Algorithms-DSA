@@ -1,6 +1,6 @@
-//problem link: from tutorial only, implementation by me || insetion sort.
+//problem link: from Reference only, implementation by me || insetion sort.
 // https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/ || gap method.
-//tutorial: https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4&ab_channel=takeUforward
+//Reference: https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

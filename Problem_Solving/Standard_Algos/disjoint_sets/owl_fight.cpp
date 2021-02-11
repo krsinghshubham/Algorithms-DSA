@@ -1,5 +1,5 @@
 //problem link: https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/practice-problems/algorithm/owl-fight/
-// tutorial linK: https://www.youtube.com/watch?v=wq6TCikSzpk&list=PL2q4fbVm1Ik4JdzE2Bv_UUGBz0TXEIrai&index=7&ab_channel=CodeNCode
+// Reference linK: https://www.youtube.com/watch?v=wq6TCikSzpk&list=PL2q4fbVm1Ik4JdzE2Bv_UUGBz0TXEIrai&index=7&ab_channel=CodeNCode
 // learning: path compression , we can store required thing in paretns.
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,5 @@
 //problem link:https://www.spoj.com/problems/RMQSQ/
-// tutorial linK:https://www.youtube.com/watch?v=o7278rPg_9I&list=PL2q4fbVm1Ik7Ds5cuaoOmExjOQG31kM-p&index=2&t=0s&ab_channel=CodeNCode
+// Reference linK:https://www.youtube.com/watch?v=o7278rPg_9I&list=PL2q4fbVm1Ik7Ds5cuaoOmExjOQG31kM-p&index=2&t=0s&ab_channel=CodeNCode
 // learning: we cant use sizeof(arr)/arr[0] for array passed as argument in function, because inside function passed array are considered as pointers.... so it ruturn in 1;
 #include <bits/stdc++.h>
 using namespace std;

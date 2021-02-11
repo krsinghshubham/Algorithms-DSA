@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/powx-n/submissions/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

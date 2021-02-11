@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/linked-list-cycle/
-// tutorial linK: https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=8&t=6s&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=8&t=6s&ab_channel=takeUforward
 // learning:
 // 36th is tougher variation of this.
 #include <bits/stdc++.h>

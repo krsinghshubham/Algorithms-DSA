@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/set-matrix-zeroes/
-// tutorial linK: https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

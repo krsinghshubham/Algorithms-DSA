@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/maximum-subarray/submissions/
-// tutorial  link: https://www.youtube.com/watch?v=w_KEocd__20&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=5&ab_channel=takeUforward
+// Reference  link: https://www.youtube.com/watch?v=w_KEocd__20&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=5&ab_channel=takeUforward
 // problem: https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 // learning:
 #include <bits/stdc++.h>

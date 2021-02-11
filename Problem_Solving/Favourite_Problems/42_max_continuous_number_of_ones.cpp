@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/max-consecutive-ones/submissions/
-// tutorial linK: https://www.youtube.com/watch?v=Mo33MjjMlyA&list=PLgUwDviBIf0rBT8io74a95xT-hDFZonNs&index=4&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=Mo33MjjMlyA&list=PLgUwDviBIf0rBT8io74a95xT-hDFZonNs&index=4&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

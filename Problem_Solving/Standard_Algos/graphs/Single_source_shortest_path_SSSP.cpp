@@ -1,5 +1,5 @@
 //* problem link: https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/bishu-and-his-girlfriend/
-//* tutorial link: https://www.youtube.com/watch?v=-HH_hFIXVVA&list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh&index=7
+//* Reference link: https://www.youtube.com/watch?v=-HH_hFIXVVA&list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh&index=7
 // A simple representation of graph using STL
 /*
 store adjaceny list of graph.

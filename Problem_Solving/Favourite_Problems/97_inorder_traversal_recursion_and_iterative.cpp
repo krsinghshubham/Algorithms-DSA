@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/binary-tree-inorder-traversal/
-// tutorial linK:
+// Reference linK:
 //! morriss: (ALSO CALLED THREADED BINARY TREE) https://www.youtube.com/watch?v=9ChGER8A3Ps&ab_channel=KarthikChennupati
 // stack: https://www.youtube.com/watch?v=nzmtCFNae9k
 // stack wale ka video se keval idea, code mera. video wale code is not that much Optimized.just understand the flow from it.

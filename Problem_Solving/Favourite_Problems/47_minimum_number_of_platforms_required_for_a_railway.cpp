@@ -1,5 +1,5 @@
 //problem link: https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#
-// tutorial linK: greedy. https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=2&ab_channel=takeUforward
+// Reference linK: greedy. https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=2&ab_channel=takeUforward
 // learning:
 //! SOMETIMES WHILE LOOP KEEP THINGS SIMPLER THAN FOR LOOP, EXAMPLE IS HERE.
 #include <algorithm>

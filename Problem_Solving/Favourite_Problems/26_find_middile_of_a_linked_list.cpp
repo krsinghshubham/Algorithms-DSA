@@ -1,5 +1,5 @@
 //problem link:  https://leetcode.com/problems/middle-of-the-linked-list/
-// tutorial linK: here only or somewhere dont remember, but its best
+// Reference linK: here only or somewhere dont remember, but its best
 // learning: The Tortoise and the Hare (Floyd's Algorithm)
 #include <bits/stdc++.h>
 using namespace std;

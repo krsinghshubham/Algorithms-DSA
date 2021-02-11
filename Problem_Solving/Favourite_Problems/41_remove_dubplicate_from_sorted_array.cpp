@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-// tutorial linK: // self-intituiton, https://www.youtube.com/watch?v=Fm_p9lJ4Z_8&list=PLgUwDviBIf0rBT8io74a95xT-hDFZonNs&index=3&ab_channel=takeUforward
+// Reference linK: // self-intituiton, https://www.youtube.com/watch?v=Fm_p9lJ4Z_8&list=PLgUwDviBIf0rBT8io74a95xT-hDFZonNs&index=3&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

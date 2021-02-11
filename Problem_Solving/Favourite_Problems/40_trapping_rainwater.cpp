@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/trapping-rain-water/
-// tutorial linK: https://www.youtube.com/watch?v=gIZSOpW-SN0
+// Reference linK: https://www.youtube.com/watch?v=gIZSOpW-SN0
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

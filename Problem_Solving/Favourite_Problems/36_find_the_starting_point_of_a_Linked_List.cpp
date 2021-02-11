@@ -1,6 +1,6 @@
 // done already concept same one in array section.
 //problem link: https://leetcode.com/problems/linked-list-cycle-ii/
-// tutorial linK: // https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=11&t=842s&ab_channel=takeUforward
+// Reference linK: // https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=11&t=842s&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

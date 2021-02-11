@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/binary-tree-right-side-view/
-// tutorial link: no need , just apply bfs, visit 1st node only
+// Reference link: no need , just apply bfs, visit 1st node only
 // * CAN BE SOLVED BY BFS AND DFS BOTH, IMPLEMENT BOTH
 // learning:
 #include <bits/stdc++.h>

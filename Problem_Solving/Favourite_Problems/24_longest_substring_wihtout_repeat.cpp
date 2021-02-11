@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-// tutorial linK: https://www.youtube.com/watch?v=qtVh-XEpsJo
+// Reference linK: https://www.youtube.com/watch?v=qtVh-XEpsJo
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

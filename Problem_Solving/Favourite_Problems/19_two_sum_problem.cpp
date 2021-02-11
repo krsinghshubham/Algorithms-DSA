@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/two-sum/
-// tutorial linK:https://www.youtube.com/watch?v=dRUpbt8vHpo&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=1&ab_channel=takeUforward
+// Reference linK:https://www.youtube.com/watch?v=dRUpbt8vHpo&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=1&ab_channel=takeUforward
 // learning: to find indices of array whose sum is equals to target.
 #include <bits/stdc++.h>
 using namespace std;

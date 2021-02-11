@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-// tutorial linK:https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11&ab_channel=takeUforward
+// Reference linK:https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

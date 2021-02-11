@@ -1,5 +1,5 @@
 //problem link:https://www.spoj.com/problems/MPOW/
-// tutorial linK: https://www.youtube.com/watch?v=d8xB9jgEu-A&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=11&ab_channel=CodeNCode
+// Reference linK: https://www.youtube.com/watch?v=d8xB9jgEu-A&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=11&ab_channel=CodeNCode
 //* learning: implement BINARY EXPONENTIATION CONCEPT TO OPTIMISE IT.
 #include <bits/stdc++.h>
 using namespace std;

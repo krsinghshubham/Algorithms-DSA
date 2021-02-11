@@ -1,6 +1,6 @@
-//* WAITING FOR THE VIDEO TUTORIAL FROM STRIVER.
+//* WAITING FOR THE VIDEO Reference FROM STRIVER.
 //problem link: https://www.interviewbit.com/problems/subarray-with-given-xor/#
-// tutorial linK: https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=5&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=5&ab_channel=takeUforward
 // learning: 
 #include <bits/stdc++.h>   
 using namespace std;

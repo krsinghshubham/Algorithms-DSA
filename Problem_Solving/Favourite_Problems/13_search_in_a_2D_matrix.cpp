@@ -2,7 +2,7 @@
 // * TWO PROBLEMS FOR THIS CONCEPTS ON THIS PAGE
 // problem link: GFG: https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/
 // problem link: Leetcode: below.
-// tutorial linK:https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=13
+// Reference linK:https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=13
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -58,7 +58,7 @@ int main()
 //? |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // problem link: LeetCode: https://leetcode.com/problems/search-a-2d-matrix/
 // problem link: GFG is above.
-// tutorial linK:https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=13
+// Reference linK:https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=13
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

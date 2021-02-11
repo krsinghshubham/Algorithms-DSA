@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/string-to-integer-atoi/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -25,7 +25,7 @@ int main()
 
 
 //problem link: https://leetcode.com/problems/implement-strstr/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

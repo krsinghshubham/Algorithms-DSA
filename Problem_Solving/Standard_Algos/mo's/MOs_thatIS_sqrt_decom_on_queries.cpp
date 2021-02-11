@@ -1,7 +1,7 @@
 //problem link: https://www.spoj.com/problems/DQUERY/
-// tutorial linK: https://www.youtube.com/watch?v=aZG0I9MM03s&list=PL2q4fbVm1Ik7Ds5cuaoOmExjOQG31kM-p&index=3
+// Reference linK: https://www.youtube.com/watch?v=aZG0I9MM03s&list=PL2q4fbVm1Ik7Ds5cuaoOmExjOQG31kM-p&index=3
 
-// code refrence: https://ideone.com/W4m7Vc
+// code Reference: https://ideone.com/W4m7Vc
 
 // learning: complexity is based on pointer movement which is based on block size and block size based on sqrt(n)
 // * see at bottom Note for complexity analysis.

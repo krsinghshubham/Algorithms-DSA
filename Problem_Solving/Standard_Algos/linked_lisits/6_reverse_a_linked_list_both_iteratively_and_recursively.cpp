@@ -1,6 +1,6 @@
 //problem link: https://leetcode.com/problems/reverse-linked-list/
-// tutorial linK: ITERATIVE: https://www.youtube.com/watch?v=sYcOK51hl-A&t=551s&ab_channel=mycodeschool
-// tutorial linK: RECURSIVE(my code school): https://www.youtube.com/watch?v=KYH83T4q6Vs&t=8s&ab_channel=RachitJain
+// Reference linK: ITERATIVE: https://www.youtube.com/watch?v=sYcOK51hl-A&t=551s&ab_channel=mycodeschool
+// Reference linK: RECURSIVE(my code school): https://www.youtube.com/watch?v=KYH83T4q6Vs&t=8s&ab_channel=RachitJain
 // learning: 2 ways of linked reversal
 #include <bits/stdc++.h>
 using namespace std;
@@ -73,7 +73,7 @@ Algorithm: IN NOTES (where we need not to return pointer to head and declaration
 // ! HOW TO SOLVE IF HEAD IS NOT DECLARED GLOBALLY, use &
 /*Approach #3 (Recursive) FROM LEETCODE EDITORIAL
 The recursive version is slightly trickier and the key is to work backwards. Assume that the rest of the list had already been reversed, now how do I reverse the front part? Let's assume the list is: n1 → … → nk-1 → nk → nk+1 → … → nm → Ø
-refer tutorial.
+refer Reference.
 */
 Node *reverseList(Node *head)
 {

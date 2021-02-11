@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/submissions/detail/451151365/
-// tutorial linK:
+// Reference linK:
 
 // learning: (Not able to solve through greedy algorithm for all test cases, greedy won’t work for general
 //test cases(for that we need to use DP) . Even striver clarified it. For general its in DP section again. )

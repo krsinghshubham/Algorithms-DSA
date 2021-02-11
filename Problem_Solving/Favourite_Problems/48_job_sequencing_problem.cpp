@@ -1,5 +1,5 @@
 //problem link: https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1#
-// tutorial linK: Self Intitution and: https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=3&ab_channel=takeUforward
+// Reference linK: Self Intitution and: https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0pmWCl2nepwGDO05a0-7EfJ&index=3&ab_channel=takeUforward
 // learning: Greedy time complexity can be worse than Nlogn. 
 
 /*

@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
-// tutorial linK: Leetcode discuss : https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/discuss/150321/Easy-Understanding-Java-beat-95.7-with-Explanation
+// Reference linK: Leetcode discuss : https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/discuss/150321/Easy-Understanding-Java-beat-95.7-with-Explanation
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

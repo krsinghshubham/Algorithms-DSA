@@ -1,7 +1,7 @@
 //problem link: https://leetcode.com/problems/sort-colors/
-// tutorial : https://www.geeksforgeeks.org/counting-sort/
+// Reference : https://www.geeksforgeeks.org/counting-sort/
 /*
-although its totally my implementation, gfg link is for refrence: 
+although its totally my implementation, gfg link is for Reference: 
 
 */
 // learning: Counting Sort.

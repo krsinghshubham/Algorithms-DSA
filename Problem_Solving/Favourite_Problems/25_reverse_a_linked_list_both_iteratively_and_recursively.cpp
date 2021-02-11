@@ -1,6 +1,6 @@
 //problem link: https://leetcode.com/problems/reverse-linked-list/
-// tutorial linK: ITERATIVE: https://www.youtube.com/watch?v=sYcOK51hl-A&t=551s&ab_channel=mycodeschool
-// tutorial linK: RECURSIVE (my code school): https://www.youtube.com/watch?v=KYH83T4q6Vs&t=8s&ab_channel=RachitJain
+// Reference linK: ITERATIVE: https://www.youtube.com/watch?v=sYcOK51hl-A&t=551s&ab_channel=mycodeschool
+// Reference linK: RECURSIVE (my code school): https://www.youtube.com/watch?v=KYH83T4q6Vs&t=8s&ab_channel=RachitJain
 // learning: 2 ways of linked list reversal
 #include <bits/stdc++.h>
 using namespace std;

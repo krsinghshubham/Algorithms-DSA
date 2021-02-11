@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/reverse-nodes-in-k-group/
-// tutorial linK: https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=10&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=10&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

@@ -112,7 +112,7 @@ in worst case it can be o(n) when its about overflow, then we need to create a n
 */
 
 // LINKED LIST BASED IMPLEMNETATION.
-// tutorial : code: https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
+// Reference : code: https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
 //            diagram: https://www.javatpoint.com/ds-linked-list-implementation-of-stack
 #include <iostream>
 using namespace std;

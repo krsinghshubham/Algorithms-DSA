@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/reverse-words-in-a-string/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;
@@ -42,7 +42,7 @@ int main()
                 i++;
                 count++;
             }
-            v.push_back(s.substr(updated_starting_index, count)); //// ! yes we need to pass the count and not till index in 2nd prefrence.
+            v.push_back(s.substr(updated_starting_index, count)); //// ! yes we need to pass the count and not till index in 2nd pReference.
         }
     }
     //* all good after this.

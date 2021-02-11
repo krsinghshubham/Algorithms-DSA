@@ -1,5 +1,5 @@
 //* problem link: https://www.spoj.com/problems/PT07Y/
-//* tutorial link: https://www.youtube.com/watch?v=EYLiRbXu3kc&list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh&index=8&ab_channel=CodeNCode
+//* Reference link: https://www.youtube.com/watch?v=EYLiRbXu3kc&list=PL2q4fbVm1Ik6DCzm9XZJbNwyHtHGclcEh&index=8&ab_channel=CodeNCode
 /*
 1. no of connected component is 1
 2. no of edges is 1;

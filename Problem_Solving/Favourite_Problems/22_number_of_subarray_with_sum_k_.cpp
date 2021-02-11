@@ -7,7 +7,7 @@ TODO: IN SDE SHEET THE QUESTION IS ABOUT TO FIND LONGEST SUBARRAY SUM=0, IN THIS
  */
 // ! IMPORTANT FOR MEMO.
 //problem link: https://leetcode.com/problems/subarray-sum-equals-k/solution/
-// tutorial linK: https://www.youtube.com/watch?v=bqN9yB0vF08&t=407s&ab_channel=thecodingworld
+// Reference linK: https://www.youtube.com/watch?v=bqN9yB0vF08&t=407s&ab_channel=thecodingworld
 // and codebix (mis kar raha imp. test cases notice we are updating count with the frequency and not by +1 ):
 // https://www.youtube.com/watch?v=MHocw0bP1rA&ab_channel=codebix
 // learning:

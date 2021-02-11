@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/merge-two-sorted-lists/
-// tutorial linK: https://www.youtube.com/watch?v=EvgZCUhTosc&t=755s
+// Reference linK: https://www.youtube.com/watch?v=EvgZCUhTosc&t=755s
 // learning: how to use dummy/fake linked list which makes things easier
 // *learnign: diff between (->) and (.) operators. 
 #include <bits/stdc++.h>

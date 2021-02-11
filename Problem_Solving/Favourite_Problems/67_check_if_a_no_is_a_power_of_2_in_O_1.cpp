@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/power-of-two/submissions/
-// tutorial linK: https://www.youtube.com/watch?v=YlmYATs5nXc&ab_channel=PrakashShukla
+// Reference linK: https://www.youtube.com/watch?v=YlmYATs5nXc&ab_channel=PrakashShukla
 // learning:    counting no of set bits. and important observations.
 #include <bits/stdc++.h>
 using namespace std;

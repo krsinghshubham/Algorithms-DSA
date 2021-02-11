@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/unique-paths/
-// tutorial linK: https://www.youtube.com/watch?v=t_f0nwwdg5o&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=17&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=t_f0nwwdg5o&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=17&ab_channel=takeUforward
 // learning: multiple approaches all discuused in notebook
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/copy-list-with-random-pointer/
-// tutorial linK:https://www.youtube.com/watch?v=VNf6VynfpdM&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=14&ab_channel=takeUforward
+// Reference linK:https://www.youtube.com/watch?v=VNf6VynfpdM&list=PLgUwDviBIf0r47RKH7fdWN54AbWFgGuii&index=14&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

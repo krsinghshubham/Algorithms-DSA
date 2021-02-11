@@ -1,7 +1,7 @@
 
 // C++ program to Count Inversions in an array using Merge Sort
 //Problem: https://www.geeksforgeeks.org/counting-inversions/  
-//tutorial: https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10
+//Reference: https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10
 
 #include <bits/stdc++.h>
 using namespace std;

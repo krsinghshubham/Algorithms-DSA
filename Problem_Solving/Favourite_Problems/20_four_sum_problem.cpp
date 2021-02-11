@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/4sum/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

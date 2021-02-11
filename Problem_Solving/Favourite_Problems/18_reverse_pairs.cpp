@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/reverse-pairs/
-// tutorial linK: https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=18&ab_channel=takeUforward
+// Reference linK: https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=18&ab_channel=takeUforward
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/delete-node-in-a-linked-list/submissions/
-// tutorial linK: In code
+// Reference linK: In code
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

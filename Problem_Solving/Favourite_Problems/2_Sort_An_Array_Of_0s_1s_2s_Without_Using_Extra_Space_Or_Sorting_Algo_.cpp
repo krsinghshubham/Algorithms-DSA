@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/sort-colors/
-// tutorial : https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2&t=110s&ab_channel=takeUforward
+// Reference : https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2&t=110s&ab_channel=takeUforward
 // * learning: Counting Sort and DUTCH NATIONAL ALGORITHM
 /*
 coutning sort is good for short range arrays 
@@ -43,7 +43,7 @@ public:
 
 
 // appproach 2 using counting sort.
-// tutorial : https://www.youtube.com/watch?v=7zuGmKfUt7s&ab_channel=GeeksforGeeks
+// Reference : https://www.youtube.com/watch?v=7zuGmKfUt7s&ab_channel=GeeksforGeeks
 //runtime: 8ms
 #include <bits/stdc++.h>
 using namespace std;

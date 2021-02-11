@@ -1,7 +1,7 @@
 //problem link:  https://practice.geeksforgeeks.org/problems/level-order-traversal/1 // print in in one single line
 // * https://leetcode.com/problems/binary-tree-level-order-traversal/ // print level by level
 // https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/ // print zig zag
-// ! tutorial link: way to add into vector<vector<int>>
+// ! Reference link: way to add into vector<vector<int>>
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

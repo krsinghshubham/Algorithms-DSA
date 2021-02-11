@@ -1,6 +1,6 @@
 //problem link: https://leetcode.com/problems/intersection-of-two-linked-lists/solution/
-// tutorial linK:https://www.youtube.com/watch?v=gE0GopCq378&ab_channel=mycodeschool
-// learning: tutorial is leetcode editorial
+// Reference linK:https://www.youtube.com/watch?v=gE0GopCq378&ab_channel=mycodeschool
+// learning: Reference is leetcode editorial
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long

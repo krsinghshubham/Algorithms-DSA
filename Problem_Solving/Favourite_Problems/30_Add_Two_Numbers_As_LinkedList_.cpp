@@ -1,5 +1,5 @@
 //problem link:  https://leetcode.com/problems/add-two-numbers/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

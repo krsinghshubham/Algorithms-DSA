@@ -1,5 +1,5 @@
 //problem link:
-// tutorial linK: https://www.youtube.com/watch?v=DQJfvz2Dhss&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=10&ab_channel=CodeNCode
+// Reference linK: https://www.youtube.com/watch?v=DQJfvz2Dhss&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=10&ab_channel=CodeNCode
 // learning: O(sqrt(n)) method is mentioned in notebook
 //! this gives us  O(logn )complelxity. , therory in notebook
 #include <bits/stdc++.h>

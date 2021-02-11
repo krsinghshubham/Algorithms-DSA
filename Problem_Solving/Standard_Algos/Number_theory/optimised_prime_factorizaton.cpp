@@ -1,6 +1,6 @@
 //problem link:
-// tutorial linK:https://www.youtube.com/watch?v=geLyvdjxQNg&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=6&ab_channel=CodeNCode
-// tutorial: https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
+// Reference linK:https://www.youtube.com/watch?v=geLyvdjxQNg&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=6&ab_channel=CodeNCode
+// Reference: https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
 // learning: Optimized method for finding it.
 //! Optimized !!
 #include <bits/stdc++.h>

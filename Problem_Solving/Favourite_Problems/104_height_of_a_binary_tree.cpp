@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/minimum-depth-of-binary-tree/
-// tutorial linK: https://www.youtube.com/watch?v=_pnqMz5nrRs and also in placement notes.
+// Reference linK: https://www.youtube.com/watch?v=_pnqMz5nrRs and also in placement notes.
 // for iterative here only.
 // learning: using recursion, can be done easily via iteratively too.
 #include <bits/stdc++.h>

@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/pascals-triangle/
-// tutorial linK: https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8
+// Reference linK: https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8
 // learning:
 /*
 3 types : 

@@ -1,6 +1,6 @@
 //! two approaches, 2nd Optimized approach is below
 //problem link: https://leetcode.com/problems/majority-element/
-// tutorial linK:https://www.youtube.com/watch?v=AoX3BPWNnoE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=15&ab_channel=takeUforward
+// Reference linK:https://www.youtube.com/watch?v=AoX3BPWNnoE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=15&ab_channel=takeUforward
 // tut 2: https://www.youtube.com/watch?v=n5QY3x_GNDg&ab_channel=TECHDOSE
 // * learning:  MOORE'S VOTING ALGORITHM
 #include <bits/stdc++.h>

@@ -1,5 +1,5 @@
 //problem link:https://leetcode.com/problems/palindrome-linked-list/
-// tutorial linK:
+// Reference linK:
 // learning:
 #include <bits/stdc++.h>
 using namespace std;

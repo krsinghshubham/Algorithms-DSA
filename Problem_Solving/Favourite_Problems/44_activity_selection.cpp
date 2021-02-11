@@ -1,5 +1,5 @@
 //problem link: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/  in sheet its same as 1st quesstion but here i am implementing another question based on same concept.
-// tutorial linK: activity selection. type.
+// Reference linK: activity selection. type.
 // learning: comparator in sort function and that too in ternary format.
 #include <bits/stdc++.h>
 using namespace std;
