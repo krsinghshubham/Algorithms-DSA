@@ -17,7 +17,16 @@ Algorithm:
 
 int main()
 {
+  clock_t begin=clock();
+  //* --------------------------------
 
+  
+  
+
+
+
+  //*---------------------------------
+  clock_t end=clock();
+  cout<<"\n\nExecute In: "<<double(end-begin)/CLOCKS_PER_SEC<<" ms";
   return 0;
 }
-
