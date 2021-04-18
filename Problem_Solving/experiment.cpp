@@ -2,6 +2,7 @@
 // Reference linK:
 // learning:
 #include <bits/stdc++.h>
+
 using namespace std;
 #define ll long long
 #define fo(i, n) for (int i = 0; i < n; i++)
